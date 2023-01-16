@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Programming Job Board</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <header>
+        <h1>Programming Job Board</h1>
+        <p>A platform where people looking for programming jobs and companies looking to hire programmers can connect.
+            The website typically includes a job listing section where companies can post open positions, a search and
+            filter function to help job seekers find relevant jobs. <span id="new-jobs">New jobs posting
+                everyday.</span></p>
+
+    </header>
+
+    <section id="post-job">
+        <h2>Post a Job</h2>
+        <form action="#">
+            <label for="job-title">Job Title:</label>
+            <input type="text" id="job-title" name="job-title" placeholder="DevOps Engineer">
+
+            <label for="company-name">Company Name:</label>
+            <input type="text" id="company-name" name="company-name" placeholder="Google">
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" placeholder="Las Vegas, NV">
+
+            <label for="job-description">Job Description:</label>
+            <textarea id="job-description" name="job-description"
+                placeholder="Google Inc. is hiring a DevOps Engineer to help us automate and improve our deployment processes. You should have experience with containerization and Kubernetes."></textarea>
+
+            <button type="submit">Post Job</button>
+        </form>
+    </section>
+
+
+    <main>
+        <section id="job-filter">
+            <h2>Filter Jobs</h2>
+            <form action="#">
+                <label for="keyword">Keyword:</label>
+                <input type="text" id="keyword" name="keyword" placeholder="Data Scientist">
+
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" placeholder="Chicago">
+                <br>
+                <button type="submit">Filter</button>
+            </form>
+        </section>
+
+        <h2>Featured Jobs</h2>
+        <section id="job-listings">
+            <!-- Job listings will be inserted here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright © 2023 Programming Job Board</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
+

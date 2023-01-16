@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather App</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+</head>
+
+<body class="font-monospace text-success-emphasis">
+    <div class="conatainer-sm" id="date-time"></div>
+
+
+    <nav class="navbar navbar-expand-lg bg-body-emphasis m-4  >
+        <div class=" container-fluid">
+        <a class="navbar-brand  text-success-emphasis  p-3 fs-2 fw-bold font-monospace" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                class="bi bi-cloud-drizzle-fill" viewBox="0 0 16 16">
+                <path
+                    d="M4.158 12.025a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 0 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317zm6 0a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 0 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317zm-3.5 1.5a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 0 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317zm6 0a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 1 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317zm.747-8.498a5.001 5.001 0 0 0-9.499-1.004A3.5 3.5 0 1 0 3.5 11H13a3 3 0 0 0 .405-5.973z" />
+            </svg>
+            Weather App</a>
+        <!-- <span class="badge text-bg-info">Weather App</span> -->
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active fs-5 fw-normal text-primary" aria-current="page" href="../../index.html"
+                        target="_blank">Home</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link fs-5 fw-normal text-primary" href="#">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-primary" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item">
+                            <a href="../About/about.html" target="_blank"
+                                class="nav-link fst-italic fw-medium text-primary">Usage Guide
+                                and
+                                Troubleshooting</a>
+                        </li>
+                    </ul>
+
+                </li>
+
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2 " type="search" id="city" placeholder="Input the city name"
+                    aria-label="Search">
+
+                <button class="btn btn-outline-success text-bg-success" type="submit" id="submit">
+                    Search</button>
+            </form>
+        </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center font-monospace fs-1 fw-semibold">Welcome to my weather website!</h2>
+                <p class="text-center ">This website provides <span class="text-danger fst-italic fw-bolder">real-time
+                    </span> weather information for any city or geographic location around the world.
+                    You can search for the weather of a specific city and view current conditions. I use data from the
+                    Weather by API-Ninjas API, ensuring the most accurate and up-to-date information.<br><span
+                        class="fst-italic text-info">Try searching for your city
+                        now! ☁️🌦️⛄☀️</span>
+                    <br><span class="fst-italic text-danger">Looking for a specific city but can't find the
+                        search
+                        button?
+                        Try using the menu above to find it.</span>
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container">
+        <h1 class="my-4 text-center text-success-emphasis font-monospace">Weather for '<span
+                class="text-capitalize fst-italic fw-bold" id="cityName"></span>'</h1>
+        <main>
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                        <div class="card-header py-3 text-bg-success border-primary">
+                            <h4 class="my-0 fw-normal">Temperatures</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title"><span class="fw-bolder fs-1 text-dark" id="temp2">
+                                </span><small class="text-muted fw-light"><span>&#8451;</span></small>
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Temperature is <b><span id="temp"></span></b></li>
+                                <li>Minimum Temperature is <b><span id="min_temp"></span></b></li>
+                                <li>Maximum Temperature is <b><span id="max_temp"></span></b></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                        <div class="card-header py-3 text-bg-success border-primary">
+                            <h4 class="my-0 fw-normal">Humidity Info</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title"><span class="fw-bolder fs-1 text-dark"
+                                    id="humidity2"></span><small class="text-muted fw-light"> %</small>
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Cloud PCT is <b><span id="cloud_pct"></span></b></li>
+                                <li>Feels Like <b><span id="feels_like"></span></b></li>
+                                <li>Humidity is <b><span id="humidity"></span></b></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                        <div class="card-header py-3 text-bg-success     border-primary">
+                            <h4 class="my-0 fw-normal">Wind and Sun Info</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title"><span class="fw-bolder fs-1 text-dark"
+                                    id="windspeed2"></span><small class="text-muted fw-light"> km/h</small>
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Wind Speed is <b><span id="wind_speed"></span></b></li>
+                                <!-- <li>Wind degree is <b><span id="wind_degrees"></span></b></li> -->
+                                <li>Sunrise time is <b><span id="sunrise"></span></b></li>
+                                <li>Sunset time is <b><span id="sunset"></span></b></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <h2 class="display-6 text-center mb-4">Weather for other comman places</h2>
+            <div class="table-responsive">
+                <table class="table text-center" id="commonPlacesTable">
+                    <thead>
+                        <tr class="text-bg-success">
+                            <th scope="col">City</th>
+                            <th scope="col">Cloud_pct</th>
+                            <th scope="col">Feels_like</th>
+                            <th scope="col">Humidity</th>
+                            <th scope="col">Max_temp</th>
+                            <th scope="col">Min_temp</th>
+                            <th scope="col">Sunrise</th>
+                            <th scope="col">Sunset</th>
+                            <th scope="col">Temp</th>
+                            <th scope="col">Wind_degrees</th>
+                            <th scope="col">Wind_speed</th>
+                        </tr>
+                    </thead>
+                    <tbody id="commonPlaceData">
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <h1 class="display-4 text-center">Additional Information</h1>
+                    <div class="card-deck">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-text">- Users can search for weather information by city name.</p>
+                            </div>
+                        </div> <br>
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-text">- The website uses data from the Weather by API-Ninjas API to
+                                    provide accurate
+                                    and up-to-date weather information.</p>
+                            </div>
+                        </div>
+                    </div> <br>
+                    <div class="card-deck">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-text">- Information provided on the website includes current conditions
+                                    such as
+                                    temperature, humidity, wind speed and direction, and cloud coverage.</p>
+                            </div>
+                        </div> <br>
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-text">- Users can also view the sunrise and sunset times for a specific
+                                    city.</p>
+                            </div>
+                        </div>
+                    </div> <br>
+                    <div class="card-deck">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-text">- The website is updated in real-time and provides the most current
+                                    weather
+                                    information available.</p>
+                            </div>
+                        </div> <br>
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-text">- The website includes a search function that allows users to
+                                    easily find the
+                                    information they need.</p>
+                            </div>
+                        </div>
+                    </div> <br>
+                    <div class="card-deck">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-text">- Users can access detailed information about the website and its
+                                    features by
+                                    visiting the "About" or "Help" page.</p>
+                            </div>
+                        </div> <br>
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-text">- The website is mobile-responsive and can be used on any device.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+
+            <footer class="bg-light text-center">
+                <!-- Grid container -->
+                <div class="container p-4 pb-0">
+                    <!-- Section: Form -->
+                    <section class="">
+                        <form action="">
+                            <!--Grid row-->
+                            <div class="row d-flex justify-content-center">
+                                <!--Grid column-->
+                                <div class="col-auto">
+                                    <p class="pt-2">
+                                        <strong>Sign up for my newsletter</strong>
+                                    </p>
+                                </div>
+                                <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-md-5 col-12">
+                                    <!-- Email input -->
+                                    <div class="form-outline mb-4 ">
+                                        <input type="email" id="email" class="form-control bg-success-subtle"
+                                            placeholder="Input a valid email address" />
+
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-auto">
+                                    <!-- Submit button -->
+                                    <button type="submit" class="btn btn-success mb-4">
+                                        Subscribe
+                                    </button>
+                                </div>
+                                <!--Grid column-->
+                            </div>
+                            <!--Grid row-->
+                        </form>
+                    </section>
+                    <!-- Section: Form -->
+                </div>
+                <!-- Grid container -->
+
+                <!-- Copyright -->
+                <div class="text-center p-3">
+                    © 2023 Copyright:
+                    <a class="text-primary font-monospace text-decoration-none"
+                        href="https://www.linkedin.com/in/salman-ahmad-khan-725989200/" target="_blank">Salman</a>
+                    <br><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                        class="bi bi-brightness-high" viewBox="0 0 16 16">
+                        <path
+                            d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                        class="bi bi-cloud-lightning-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M7.053 11.276A.5.5 0 0 1 7.5 11h1a.5.5 0 0 1 .474.658l-.28.842H9.5a.5.5 0 0 1 .39.812l-2 2.5a.5.5 0 0 1-.875-.433L7.36 14H6.5a.5.5 0 0 1-.447-.724l1-2zm6.352-7.249a5.001 5.001 0 0 0-9.499-1.004A3.5 3.5 0 1 0 3.5 10H13a3 3 0 0 0 .405-5.973z" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                        class="bi bi-moon-stars" viewBox="0 0 16 16">
+                        <path
+                            d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z" />
+                        <path
+                            d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+                    </svg>
+                </div>
+                <!-- Copyright -->
+            </footer>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+                crossorigin="anonymous"></script>
+
+            <script src="../JS/app.js"></script>
+
+</body>
+
+</html>

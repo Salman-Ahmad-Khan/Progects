@@ -1,0 +1,239 @@
+
+/* Global Styles */
+/* Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* Raleway */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+
+/* City skyline at night */
+/* body {
+    background-image: url("https://image-url.com/city-skyline-night.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+} */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1A1A1D;
+
+}
+
+/* Header Styles */
+header {
+    background-color: #1A1A1D;
+    color: #ffffff;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    color: #950740;
+    text-align: center;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+
+header p {
+    color: #C3073F;
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+
+}
+
+#new-jobs {
+    color: #4e4e50;
+    font-weight: 700;
+}
+
+#post-job {
+    background-color: #1A1A1D;
+    padding: 20px;
+    border: 1px solid #C3073F;
+    border-radius: 5px;
+
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+#post-job h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#post-job form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#post-job label {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #C3073F;
+}
+
+#post-job input[type="text"],
+#post-job textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+
+#post-job textarea {
+    height: 150px;
+    resize: none;
+}
+
+#post-job button[type="submit"] {
+    width: 100%;
+    background-color: #db0948;
+    color: #1A1A1D;
+    letter-spacing: 5px;
+    font-weight: 900;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#post-job button[type="submit"]:hover {
+    background-color: #c3073f;
+}
+
+
+
+
+/* Main Styles */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Job Filter Styles */
+#job-filter {
+
+    padding: 20px;
+    background-color: #1A1A1D;
+    border: 1px solid #950740;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 1px;
+}
+
+#job-filter h2 {
+    margin: 0;
+    padding: 5px;
+    text-align: left;
+    color: #cc2769;
+}
+
+#job-filter label {
+    display: block;
+    margin-bottom: 10px;
+    color: #c3073f;
+
+}
+
+
+#job-filter input[type="text"] {
+    padding: 10px;
+    width: 30%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-radius: 1px;
+
+
+}
+
+#job-filter input,
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#job-filter button[type="submit"] {
+    background-color: #db0948;
+    padding: 10px 20px;
+    width: 10%;
+    color: #1A1A1D;
+    letter-spacing: 5px;
+    font-weight: 900;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+#job-filter button[type="submit"]:hover {
+    background-color: #950740;
+}
+
+
+
+/* Job Listing Styles */
+h2 {
+    text-align: center;
+    color: #950740;
+
+}
+
+#job-listings {
+    margin-top: 20px;
+}
+
+.job-listing {
+    background-color: #1A1A1D;
+    border: 1px solid #950740;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+
+.job-listing h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #db0948;
+    margin-bottom: 5px;
+}
+
+
+
+.job-listing p {
+    margin-bottom: 5px;
+    color: #4e4e50;
+}
+
+.job-listing a {
+    text-decoration: none;
+    color: #db0948;
+}
+
+
+/* .job-listing:hover {
+    background-color: rgb(116, 110, 110);
+} */
+
+
+/* Footer Styles */
+footer {
+    background-color: #1A1A1D;
+    color: #C3073F;
+    padding: 20px;
+    text-align: center;
+}

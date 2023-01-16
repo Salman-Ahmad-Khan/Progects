@@ -1,0 +1,218 @@
+{
+  "jobs": [
+    {
+      "title": "Cloud Engineer",
+      "company": "JKL Inc",
+      "location": "Seattle, WA",
+      "description": "JKL Inc is seeking a Cloud Engineer to join our team. The ideal candidate will have experience with AWS, Azure, and Google Cloud. Strong communication skills and the ability to work in a team environment are a must.",
+      
+      "apply_link":"https://www.jklinsights.com/careers/cloud-engineer"
+  },
+  {
+      "title": "Cybersecurity Analyst",
+      "company": "MNO Solutions",
+      "location": "Houston, TX",
+      "description": "MNO Solutions is looking for a Cybersecurity Analyst to join our team. The ideal candidate will have experience with SIEM, threat intelligence, and incident response. Strong problem-solving skills and the ability to work in a fast-paced environment are a must.",
+     
+      "apply_link": "https://www.mnosolutions.com/careers/cybersecurity-analyst"
+  },
+  {
+      "title": "AI Engineer",
+      "company": "PQR Labs",
+      "location": "Boston, MA",
+      "description": "PQR Labs is seeking an AI Engineer to join our team. The ideal candidate will have experience with TensorFlow, Keras, and PyTorch. Strong communication skills and the ability to work in a team environment are a must.",
+     
+      "apply_link": "https://www.pqrlab.com/careers/ai-engineer"
+  },
+  
+
+    {
+      
+          
+              "title": "Full Stack Developer",
+              "company": "ABC Tech",
+              "location": "New York City, NY",
+              "description": "We are looking for a full stack developer to join our team. The ideal candidate will have experience with JavaScript, Node.js, and React. Strong problem-solving skills and the ability to work in a fast-paced environment are a must.",
+             
+              "apply_link": "https://www.abctech.com/careers/full-stack-developer"
+          },
+          {
+              "title": "DevOps Engineer",
+              "company": "DEF Corp",
+              "location": "San Francisco, CA",
+              "description": "DEF Corp is seeking a DevOps Engineer to join our team. The ideal candidate will have experience with AWS, Docker, and Jenkins. Strong communication skills and the ability to work in a team environment are a must.",
+             
+              "apply_link": "https://www.defcorp.com/careers/devops-engineer"
+          },
+          {
+              "title": "Data Scientist",
+              "company": "GHI Solutions",
+              "location": "Chicago, IL",
+              "description": "GHI Solutions is looking for a Data Scientist to join our team. The ideal candidate will have experience with Python, machine learning, and statistical analysis. Strong problem-solving skills and the ability to work in a fast-paced environment are a must.",
+             
+              "apply_link": "https://www.ghisolutions.com/careers/data-scientist"
+          },
+      
+  
+    {
+      "title": "Full Stack Developer",
+      "company": "Acme Inc.",
+      "location": "New York, NY",
+      "description": "We are looking for an experienced full stack developer to join our team. The ideal candidate will have experience with JavaScript, Node.js, and React.",
+      "apply_link": "https://www.acmeinc.com/careers/full-stack-developer"
+    },
+    {
+      "title": "Front End Developer",
+      "company": "Beta Corp.",
+      "location": "San Francisco, CA",
+      "description": "We are seeking a front end developer with experience in HTML, CSS, and JavaScript. The ideal candidate will have a strong portfolio of web development projects.",
+      "apply_link": "https://www.betacorp.com/careers/front-end-developer"
+    },
+    {
+      "title": "DevOps Engineer",
+      "company": "Gamma LLC",
+      "location": "Houston, TX",
+      "description": "We are seeking a DevOps Engineer with experience in Linux, AWS, and Jenkins. The ideal candidate will have experience working in a fast-paced, Agile environment.",
+      "apply_link": "https://www.gammallc.com/careers/devops-engineer"
+    },
+  
+    {
+      "title": "Front-End Developer",
+      "company": "Acme Inc.",
+      "location": "New York, NY",
+      "description": "We're looking for a skilled front-end developer to join our team. You'll be responsible for building and maintaining our company's website and ensuring a seamless user experience.",
+      "apply_link": "https://www.acmeinc.com/careers/front-end-developer"
+    },
+    {
+      "title": "Full Stack Developer",
+      "company": "Beta Corp.",
+      "location": "San Francisco, CA",
+      "description": "We're seeking a full stack developer to help us build and improve our web applications. You should have experience with both front-end and back-end development.",
+      "apply_link": "https://www.betacorp.com/careers/full-stack-developer"
+    },
+    {
+      "title": "Java Developer",
+      "company": "Gamma LLC",
+      "location": "Chicago, IL",
+      "description": "Gamma LLC is looking for a Java developer to help us build and maintain our enterprise applications. You should have experience with Spring and Hibernate.",
+      "apply_link": "https://www.gammallc.com/careers/java-developer"
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Delta Inc.",
+      "location": "Seattle, WA",
+      "description": "Delta Inc. is hiring a software engineer to help us build and improve our products. You should have experience with at least one modern programming language such as Java, Python, or JavaScript.",
+      "apply_link": "https://www.deltainc.com/careers/software-engineer"
+    },
+    {
+      "title": "DevOps Engineer",
+      "company": "Epsilon Inc.",
+      "location": "Houston, TX",
+      "description": "Epsilon Inc. is seeking a DevOps engineer to help us automate and improve our deployment processes. You should have experience with cloud infrastructure and configuration management.",
+      "apply_link": "https://www.epsiloninc.com/careers/devops-engineer"
+    },
+   
+        {
+          "title": "Data Scientist",
+          "company": "Zeta Inc.",
+          "location": "Boston, MA",
+          "description": "We're looking for a data scientist to help us analyze and interpret large data sets. You should have experience with machine learning and statistical modeling.",
+          "apply_link": "https://www.zetainc.com/careers/data-scientist"
+        },
+        {
+          "title": "Cloud Engineer",
+          "company": "Eta Corp.",
+          "location": "Austin, TX",
+          "description": "Eta Corp. is seeking a cloud engineer to help us design and implement our cloud infrastructure. You should have experience with AWS or Azure.",
+          "apply_link": "https://www.etacorp.com/careers/cloud-engineer"
+        },
+        {
+          "title": "AI Engineer",
+          "company": "Theta LLC",
+          "location": "San Diego, CA",
+          "description": "Theta LLC is looking for an AI engineer to help us develop and deploy machine learning models. You should have experience with TensorFlow or PyTorch.",
+          "apply_link": "https://www.thetallc.com/careers/ai-engineer"
+        },
+        {
+          "title": "Security Engineer",
+          "company": "Iota Inc.",
+          "location": "Portland, OR",
+          "description": "Iota Inc. is hiring a security engineer to help us secure our systems and networks. You should have experience with network and application security.",
+          "apply_link": "https://www.iotainc.com/careers/security-engineer"
+        },
+        {
+          "title": "Product Manager",
+          "company": "Kappa Inc.",
+          "location": "New Orleans, LA",
+          "description": "Kappa Inc. is seeking a product manager to help us build and launch new products. You should have experience with product development and market research.",
+          "apply_link": "https://www.kappainc.com/careers/product-manager"
+        },
+        {
+          "title": "Machine Learning Engineer",
+          "company": "Alpha AI",
+          "location": "San Diego, CA",
+          "description": "Alpha AI is looking for a Machine Learning Engineer to help us develop and improve our products. You should have experience with TensorFlow and PyTorch.",
+          "apply_link": "https://www.alphaai.com/careers/machine-learning-engineer"
+        },
+        {
+          "title": "Database Administrator",
+          "company": "Omega DB",
+          "location": "Miami, FL",
+          "description": "Omega DB is seeking a Database Administrator to help us maintain and optimize our databases. You should have experience with MySQL and MongoDB.",
+          "apply_link": "https://www.omegadb.com/careers/database-administrator"
+        },
+        {
+          "title": "Cloud Engineer",
+          "company": "Cloud9 Inc.",
+          "location": "Denver, CO",
+          "description": "Cloud9 Inc. is hiring a Cloud Engineer to help us build and maintain our cloud infrastructure. You should have experience with AWS and Azure.",
+          "apply_link": "https://www.cloud9inc.com/careers/cloud-engineer"
+        },
+        {
+          "title": "Security Engineer",
+          "company": "SecureTech",
+          "location": "Minneapolis, MN",
+          "description": "SecureTech is seeking a Security Engineer to help us secure our network and systems. You should have experience with penetration testing and security compliance.",
+          "apply_link": "https://www.securetech.com/careers/security-engineer"
+        },
+        {
+          "title": "Product Manager",
+          "company": "ProdCo",
+          "location": "Phoenix, AZ",
+          "description": "ProdCo is looking for a Product Manager to help us define and deliver our product roadmap. You should have experience with product management and user research.",
+          "apply_link": "https://www.prodco.com/careers/product-manager"
+        },
+        {
+          "title": "Blockchain Developer",
+          "company": "Blockchain Inc.",
+          "location": "Las Vegas, NV",
+          "description": "Blockchain Inc. is seeking a Blockchain Developer to help us build and maintain our Blockchain-based solutions. You should have experience with Ethereum and Solidity.",
+          "apply_link": "https://www.blockchaininc.com/careers/blockchain-developer"
+        },
+        {
+          "title": "Mobile Developer",
+          "company": "AppCo",
+          "location": "Portland, OR",
+          "description": "AppCo is looking for a mobile developer to help us build and improve our mobile applications. You should have experience with either iOS or Android development.",
+          "apply_link": "https://www.appco.com/careers/mobile-developer"
+        },
+        {
+          "title": "DevOps Engineer",
+          "company": "DevOps Inc.",
+          "location": "Salt Lake City, UT",
+          "description": "DevOps Inc. is hiring a DevOps Engineer to help us automate and improve our deployment processes. You should have experience with containerization and Kubernetes.",
+          "apply_link": "https://www.devopsinc.com/careers/devops-engineer"
+        },
+        {
+          "title": "Quality Assurance Engineer",
+          "company": "QA Inc.",
+          "location": "Raleigh, NC",
+          "description": "QA Inc. is seeking a Quality Assurance Engineer to help us test and improve the quality of our products. You should have experience with automated testing and JIRA.",
+          "apply_link": "https://www.qainc.com/careers/quality-assurance-engineer"
+        }
+    
+    
+      ]
+    }
+    
+  
