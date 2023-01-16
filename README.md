@@ -10,3 +10,4 @@
 - [x] Tables display data in an organized format
 - [x] The website demonstrates the developer's technical skills and proficiency 🤏😎
 ---
+
