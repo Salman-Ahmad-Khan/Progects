@@ -1,0 +1,18 @@
+#content.big-font {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap');
+
+
+
+
+#content {
+
+
+    font-family: 'Noto Naskh Arabic', serif;
+}
