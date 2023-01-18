@@ -1,5 +1,7 @@
 # The website is an interactive platform with multiple features.
 ---
+- [x] Noble Quran Website for searching and displaying specific verses from the Al Quran
+- [x] Quickly retrieve original Arabic text, translation, transliteration from the Noble Quran
 - [x] The animation segment showcases a running vehicle
 - [x] The weather website provides real-time meteorological information for specific cities or geographical locations
 - [x] The weather website search functionality enables users to query any city or geographical location and retrieve weather data

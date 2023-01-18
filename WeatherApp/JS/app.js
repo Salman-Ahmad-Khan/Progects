@@ -1,3 +1,28 @@
+/*
+
+----------------------------------------------------------------------------------------------------------
+---------------------------------------------Disclaimer---------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+1. The code for this website, including API keys, is freely available on GitHub.
+2. The user is responsible for any unauthorized or malicious usage of the API keys.
+3. The user should not use the API keys for any illegal or prohibited activities.
+4. The user should only use the API keys within the terms of service and policies of the API providers.
+5. Anyone should not use the API keys without the consent of the owner.
+6. The user should be aware of any usage limits or expiration dates of the API keys.
+7. The user should generate his own API keys if he plan to use the code for his own projects.
+8. The user is responsible for keeping the API keys secure and not sharing them with others.
+9. The developer of this website is not liable for any charges or consequences that may occur from the user's usage of
+    the API keys.
+10. By using this website and the code, the user accepts the terms and conditions of this disclaimer.
+
+
+
+----------------------------------------------------------------------------------------------------------
+---------------------------------------------Disclaimer---------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+*/
+
 const date = new Date();
 
 const year = date.getFullYear();
@@ -19,8 +44,6 @@ let dateString = date.toLocaleString("en-US", {
 
 document.getElementById("date-time").innerHTML = dateString;
 // let dateString = date.toLocaleString();
-
-
 
 const options = {
   method: "GET",
