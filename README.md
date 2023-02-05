@@ -13,8 +13,4 @@
 - [x] The website demonstrates the developer's technical skills and proficiency 🤏😎
 ---
 
-# progects
-# progects
-# progects
-# progects
-# progects
+
