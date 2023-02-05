@@ -1,3 +1,4 @@
+
 #content.big-font {
     font-size: 2em;
     font-weight: 700;
@@ -11,13 +12,12 @@
 
 
 
-#content {
-
-
-    font-family: 'Noto Naskh Arabic', serif;
-}
-
+#content,
 #ayatulkursi,
 #top {
-    font-family: 'Noto Naskh Arabic', serif;
+
+
+    font-family: 'Noto Naskh Arabic',
+    serif;
+
 }
